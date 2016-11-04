@@ -69,4 +69,5 @@ for page in range(2, 12):
     df = df.append(df2, ignore_index=True)
 
 print df
+df.rename(columns = {'NAME':'Player'}, inplace = True)
 df.to_csv('nbasalaries.csv',encoding='utf-8')
